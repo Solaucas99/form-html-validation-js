@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de inscrição</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="document.formEnvio.reset();">
+
+    <div class="container">
+        <form action="post" name="formEnvio">
+        <span class="form-space">
+            <label class="form-label" for="name">Nome:</label>
+            <input class="form-input" type="text" name="name" id="name">
+        </span> 
+
+        <span class="form-space">
+            <label class="form-label" for="lastname">Sobrenome:</label>
+            <input class="form-input" type="text" name="lastname" id="lastname">
+        </span>
+
+        <span class="form-space">
+            <label class="form-label" for="username">Nome de Usuário:</label>
+            <input class="form-input" type="text" minlength="3" maxlength="12" name="username" id="username">
+        </span>
+
+        <span class="form-space">
+            <label class="form-label" for="cpf">CPF:</label>
+            <input class="form-input" type="text" autocomplete="off" maxlength="14" name="cpf" id="cpf">
+        </span>
+
+        <span class="form-space">
+            <label class="form-label" for="pass">Senha:</label>
+            <input class="form-input" type="password" minlength="6" maxlength="12" name="pass" id="pass">
+        </span>
+
+        <span class="form-space">
+            <label class="form-label" for="confirmPass">Confirmar senha:</label>
+            <input class="form-input" type="password" minlength="6" maxlength="12" name="confirmPass" id="confirmPass">
+        </span>
+
+            <input type="button" value="Limpar" id="btn-clear">
+            <input type="submit" value="Enviar" id="btn-enviar">
+        </form>
+    </div>
+
+<script src="main.js"></script>
+</body>
+</html>
